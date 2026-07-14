@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WOPR - Mapa Operacyjna</title>
+    <style>
+      /* Reset domyślnych marginesów przeglądarki */
+      body {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        font-family: Arial, sans-serif;
+      }
+      
+      /* Mapa zajmuje cały ekran */
+      #map {
+        width: 100vw;
+        height: 100vh;
+      }
+      
+      /* Prosty panel nawigacyjny u góry */
+      .header-panel {
+        position: absolute;
+        top: 20px;
+        left: 50px;
+        z-index: 1000; /* Zapewnia, że panel jest nad mapą */
+        background: white;
+        padding: 15px 25px;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+        border-left: 5px solid #d32f2f; /* Czerwony akcent WOPR */
+      }
+      
+      h1 {
+        margin: 0;
+        font-size: 1.2rem;
+        color: #333;
+      }
+    </style>
+    <script type="module" crossorigin src="/ratweb/assets/index-ctMId703.js"></script>
+    <link rel="stylesheet" crossorigin href="/ratweb/assets/index-CmhLOP92.css">
+  </head>
+  <body>
+    <!-- Panel z tytułem -->
+    <div class="header-panel">
+      <h1>WOPR - Moduł Mapowy</h1>
+    </div>
+
+    <!-- Kontener na mapę -->
+    <div id="map"></div>
+    
+    <!-- Logika aplikacji (OpenLayers) -->
+  </body>
+</html>
